@@ -1,0 +1,45 @@
+name:                cswk-program
+version:             0.1.0.0
+
+extra-source-files:
+- README.md
+
+dependencies:
+- base >= 4.7 && < 5
+- parsec
+- Stream
+- mtl
+- containers
+- table-layout
+
+library:
+  source-dirs: src
+  default-extensions:
+  - LambdaCase
+  - RecordWildCards
+  - TypeApplications
+  - StandaloneDeriving
+
+executables:
+  cswk-program-exe:
+    main:                Main.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    - -Wall
+    - -Werror
+    dependencies:
+    - cswk-program
+
+tests:
+  cswk-program-test:
+    main:                Spec.hs
+    source-dirs:         test
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - cswk-program
