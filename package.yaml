@@ -10,15 +10,12 @@ dependencies:
 - Stream
 - mtl
 - containers
-- table-layout
 
 library:
   source-dirs: src
   default-extensions:
   - LambdaCase
   - RecordWildCards
-  - TypeApplications
-  - StandaloneDeriving
 
 executables:
   cswk-program-exe:

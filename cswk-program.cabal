@@ -21,15 +21,12 @@ library
   default-extensions:
       LambdaCase
       RecordWildCards
-      TypeApplications
-      StandaloneDeriving
   build-depends:
       Stream
     , base >=4.7 && <5
     , containers
     , mtl
     , parsec
-    , table-layout
   default-language: Haskell2010
 
 executable cswk-program-exe
@@ -46,7 +43,6 @@ executable cswk-program-exe
     , cswk-program
     , mtl
     , parsec
-    , table-layout
   default-language: Haskell2010
 
 test-suite cswk-program-test
@@ -64,5 +60,4 @@ test-suite cswk-program-test
     , cswk-program
     , mtl
     , parsec
-    , table-layout
   default-language: Haskell2010
