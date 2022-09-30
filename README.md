@@ -1,6 +1,4 @@
-### brainf**k interpreter
-
----
+## brainf**k interpreter
 
 Brainf**ck is an esoteric programming language written by Urban Müller in 1993.
 
